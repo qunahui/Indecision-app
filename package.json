@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "live-server public/",
-    "build": "webpack --watch",
-    "dev-server": "webpack-dev-server"
+    "dev": "webpack-dev-server --mode development --open",
+    "start": "node server.js",
+    "heroku-postbuild": "webpack -p"
   },
   "author": "Quang Huy",
   "license": "MIT",
